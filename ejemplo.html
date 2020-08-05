@@ -2,121 +2,120 @@
     <head>
         <meta charset="UTF-8"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">        
-        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/ihover.css">
-        <title>Suplemento Dario</title>  
+        <script src="js/popper.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <title>Compra</title>  
       </head>
-    <body>
+      <body>
         <header>
-
-<nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="suplemenDiario.html">
-      Suplemto diario
-    </a>
-  </nav>
-        </header>
-        <div class="container">
-        <section class="main row">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">cantidad</th>
-                    <th scope="col">total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>
-                        <figure class="img">
-                            <img src="img/proc1.png"  alt="cfe">
-                            <figcaption class="figure-caption">Cafe 3 en 1</figcaption>.</figcaption>
-                          </figure>
-                    </td>
-                    <td>
-                        $2300000
-                    </td>
-                    <td>@mdo</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-          <aside class="col-md-6">
-            <form action="#" class="credit-card-div">
-                <div class="panel panel-default" >
-                 <div class="panel-heading">
-                     
-                      <div class="row ">
-                              <div class="col-md-12">
-                                  <input type="text" class="form-control" placeholder="Enter Card Number" />
-                              </div>
-                          </div>
-                     <div class="row ">
-                              <div class="col-md-3 col-sm-3 col-xs-3">
-                                  <span class="help-block text-muted small-font" > Expiry Month</span>
-                                  <input type="text" class="form-control" placeholder="MM" />
-                              </div>
-                         <div class="col-md-3 col-sm-3 col-xs-3">
-                                  <span class="help-block text-muted small-font" >  Expiry Year</span>
-                                  <input type="text" class="form-control" placeholder="YY" />
-                              </div>
-                        <div class="col-md-3 col-sm-3 col-xs-3">
-                                  <span class="help-block text-muted small-font" >  CCV</span>
-                                  <input type="text" class="form-control" placeholder="CCV" />
-                              </div>
-                         <div class="col-md-3 col-sm-3 col-xs-3">
-                <img src="assets/img/1.png" class="img-rounded" />
-                         </div>
-                          </div>
-                     <div class="row ">
-                              <div class="col-md-12 pad-adjust">
-                
-                                  <input type="text" class="form-control" placeholder="Name On The Card" />
-                              </div>
-                          </div>
-                     <div class="row">
-                <div class="col-md-12 pad-adjust">
-                    <div class="checkbox">
-                    <label>
-                      <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
-                    </label>
-                  </div>
+            <div class="container">
+                <div class="row justify-content-between mb-5">
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                        <a class="navbar-brand" href="index.html">Suplemwento Diaterio</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
                 </div>
-                     </div>
-                       <div class="row ">
-                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                                 <input type="submit"  class="btn btn-danger" value="CANCEL" />
-                              </div>
-                              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                                  <input type="submit"  class="btn btn-warning btn-block" value="PAY NOW" />
-                              </div>
-                          </div>
-                     
-                                   </div>
-                              </div>
-                </form>
-          </aside>
-        </section>
+            </div>
+        </header>   
+        <br>
+        <main>
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                        <form id="procesar-pago" action="#" method="post">
+                            <div class="form-group row">
+                                <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="cliente"
+                                        placeholder="Ingresa nombre cliente" name="destinatario">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                                </div>
+                            </div>
+    
+                            <div id="carrito" class="form-group table-responsive" >
+                                <table class="table" id="lista-compra" >
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Sub Total</th>
+                                            <th scope="col">Eliminar</th>
+                                        </tr>
+    
+                                    </thead>
+                                    <tbody >
+    
+                                    </tbody>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                        <th scope="col">
+                                            <p id="subtotal"></p>
+                                        </th>
+                                        <!-- <th scope="col"></th> -->
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">IGV :</th>
+                                        <th scope="col">
+                                            <p id="igv"></p>
+                                        </th>
+                                        <!-- <th scope="col"></th> -->
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                        <th scope="col">
+                                            <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                        </th>
+                                        <!-- <th scope="col"></th> -->
+                                    </tr>
+    
+                                </table>
+                            </div>
+    
+                            <div class="row justify-content-center" id="loaders">
+                                <img id="cargando" src="img/cargando.gif" width="220">
+                            </div>
+    
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 mb-2">
+                                    <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                </div>
+                            </div>
+                        </form>
+    
+    
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+        </main>
+    
+    
+    
+    
+    
         </div>
-
+        <script src="js/carrito.js"></script>
+        <script src="js/compra.js"></script>
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    </body>
+        <script src="./js/acumulador.js"></script>
+      </body>
     </html>

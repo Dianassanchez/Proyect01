@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/ihover.css">
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <h6 class="text-uppercase font-weight-bold">
     <a class="navbar-brand" href="#">PRODUCTOS</a>
     </h6>
@@ -39,41 +39,42 @@
             PRODUCTO
           </a> 
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="suplemenDiario.html">Suplemento Diario</a>
-            <a class="dropdown-item" href="ciudadoPers.html">Cuidado Personal</a>
-            <a class="dropdown-item" href="Paguetempresarial.html">Paguetes Empresariales</a>
+            <a class="dropdown-item" href="ListaSuplementos.html">SUPLEMENTO DIETARIO</a>
+            <a class="dropdown-item" href="listacuidadoPersonal.html">CUIDADO PERSONAL</a>
+            <a class="dropdown-item" href="ListadoPaqutesempresal.html">PAQUETES EMPRESARIALES</a>
           </div>
             </h6>
         </li>
       </ul>
-    </div>
   </nav>
-  <div class="container">
-    <h3> SUPLEMENTO DIARIO</h3>
-    <p>lista de productos</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;"> 
-          <div class="ih-item square colored effect13 bottom_to_top">
-              <a href="Cafe3.html" >
-                  <div class="img">
-                      <img src="img/cafe3.jpg" alt="img">
-                  </div>
-                  <div class="info">
-                      <h3>Gano Cafe 3 en 1 </h3>
-                      <p> Más información</p>
-                  </div>
-              </a>
-          </div>
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+    <h1 class="display-4 mt-4">Lista de Productos</h1>
+    <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+</div>
+  <div class="container" id="lista">
+    <div class="row justify-content-md-center">
+      <div class="col-md-4">
+        <div class="text-center" >
+           <div class="ih-item square colored effect13 bottom_to_top">
+             <a href="productoCafe.html">
+               <div class="img">
+                <img src="img/cafe3.jpg" alt="img">
+               </div>
+              <div class="info">
+                <h3>GANO CAFÉ CLASSIC </h3>
+                <p> Más información</p>
+            </div>
+             </a>              
+         </div>
         </div>
       </div>
     </div>
+    <br></br>
     <div class="col mb-4">
-      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
         <div class="ih-item square colored effect13 bottom_to_top">
-            <a href="#">
+            <a href="ProductoClasico.html">
                 <div class="img">
                     <img src="img/CA3.jpg" alt="img">
                 </div>
@@ -85,10 +86,12 @@
         </div>
       </div>
     </div>
+    </div>
     <div class="col mb-4">
-      <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
         <div class="ih-item square colored effect13 bottom_to_top">
-            <a href="#">
+            <a href="productoCeral.html">
                 <div class="img">
                     <img src="img/ca2.jpg" alt="img">
                 </div>
@@ -100,10 +103,12 @@
         </div>
     </div>
     </div>
+    </div>
     <div class="col mb-4">
-        <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
           <div class="ih-item square colored effect13 bottom_to_top">
-             <a href="#">
+             <a href="ProductoChoco.html">
                  <div class="img">
                      <img src="img/chocolate1.png" alt="img">
                  </div>
@@ -116,11 +121,21 @@
        </div>
     </div>
   </div>
-  
-
-    <script src="carrito.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </div>
+  <footer>
+    <div class="card">
+        <h5 class="card-header">Mas infromacion consultar las siguiente url: <a href="https://ganoexcel.com.co/"> GanoExcel</a> </h5>
+        
+      </div>
+     
+</footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/compra.js"></script>
 </body>
 </html>
