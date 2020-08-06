@@ -76,9 +76,17 @@ function procesarCompra() {
                     setTimeout(() => {
                         compra.vaciarLocalStorage();
                         enviado.remove();
-                        window.location = "index.html";
+                        // window.location = "index.html";
                     }, 2000);
-                    alert("Envio Exitos");
+                    Swal.fire({
+                        type: 'Compra exitosa',
+                        title: 'Compra segura',
+                        text: 'Has realizado tu compra con éxito',
+                        showConfirmButton: false,
+                        timer: 2000
+                    }).then(function () {
+                        window.location = "index.html";
+                    })
             /*emailjs.sendForm(service_id, template_id, myform[0])
                 .then(() => {
                     cargandoGif.style.display = 'none';

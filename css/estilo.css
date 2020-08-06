@@ -3,5 +3,49 @@
 }
 #carouselExampleInterval {
     margin-top: 100px;
+}
 
+.bodySomos{
+    color: white;
+    background-color: brown;
+}
+.nav-index{
+    color:white !important;
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: brown !important;
+}
+.bg-light {
+    background-color: white;
+}
+.page-footer{
+    background-color: brown;
+}
+
+.page-footer-2{
+    background-color: #343a40 !important;
+}
+.footer-copyright-2{
+    background-color: #525252;
+    color:white;
+}
+.footer-copyright{
+    background-color: #b93439;
+    color:white;
+}
+
+.fa {
+    font-size: 50px !important;
+    color: white;
+    margin-left: 250px;
+}
+
+.bg-dark {
+    background-color: #b7bbbf !important;
+}
+.navbar-dark .navbar-brand{
+    color: black  !important;
 }
